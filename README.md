@@ -18,3 +18,13 @@ end
 def hi(name)
  "Hello #{name}"
 end
+
+We can just run: hi "Ben"  - if it is obvious what we are doing, the () can be obmited.
+
+When we do:
+def hi(name = "World")
+  "Hello #{name.capitalize}!"
+end
+
+if we then run just: hi
+The default value will be "Hello World!"
