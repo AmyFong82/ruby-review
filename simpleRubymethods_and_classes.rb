@@ -28,6 +28,21 @@ if we then run just: hi
 The default value will be "Hello World!"
 
 
-class Greater
-  
+class Greeter
+  def initialize(name = "World")
+    @name = name
+  end
+
+  def say_hi
+    "hi #{@name}!"
+  end
+
+  def say_bye
+    "Bye #{@name}"
+  end
 end
+
+# @name is an instance variable, and is accessible by all the methods in the class.
+
+# To create an object, do: 
+  greeter = Greeter.new("Amy")
