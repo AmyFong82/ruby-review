@@ -14,3 +14,7 @@ Math.sqrt(9) - find the square rot of 9, = 3.0
 def hi
   puts "Hello World"
 end
+
+def hi(name)
+ "Hello #{name}"
+end
