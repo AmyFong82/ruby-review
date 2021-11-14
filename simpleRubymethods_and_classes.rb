@@ -29,6 +29,7 @@ The default value will be "Hello World!"
 
 
 class Greeter
+  attr_accessor :name
   def initialize(name = "World")
     @name = name
   end
@@ -46,3 +47,8 @@ end
 
 # To create an object, do: 
   greeter = Greeter.new("Amy")
+
+# The attr_accessor makes it possible to access the @name for the Greeter object.
+greeter.name = "Betty"
+# will change the greeter.name to the name value.
+# attr_accessor allows reading and writing of the attribute.
