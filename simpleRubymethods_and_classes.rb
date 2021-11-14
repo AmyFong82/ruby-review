@@ -1,6 +1,7 @@
 # This is not actually a ruby file, just a note for simple ruby methods and classes.
 
 To open Interactive Ruby, type: irb in the terminal
+To exit: control D, or type exit or quit.
 
 "puts" always returns "nil"
 
