@@ -82,3 +82,17 @@ end
 => "Hello, from an instance method"
 
 We cannot call an instance method on the class itself, and we cannot directly call a class method on an instance.
+
+Just reference, below is a javascript class:
+class User {
+	constructor(id, username, completion_status){
+		this.id = id;
+		this.username = username;
+		this.completion_status = completion_status;
+	}
+
+	// for Guest user
+	levelUp(){
+		this.completion_status += 1
+	}
+}
