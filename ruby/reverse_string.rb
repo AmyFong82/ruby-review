@@ -8,15 +8,15 @@
 
 
 def reverse_string(str)
-  str_arr = str.chars
-  reversed_arr = []
-  str_length = str.size
-  index = str_length - 1
-  for c in str_arr do
-    reversed_arr[index] = c
-    index -= 1
+  str_arr = str.chars  #chars makes the string into array.
+  reversed_arr = []   #create an empty reversed_arr to hold the final arr.
+  str_length = str.size   #get the length of the str to use for index.
+  index = str_length - 1     #counting from the last one.
+  for c in str_arr do      #iterate over the str_arr
+    reversed_arr[index] = c     # put the first c in the last place.
+    index -= 1    #counting backwards.
   end
-  reversed_arr.join
+  reversed_arr.join    #join the arr back to a string, and return it.
 end
 
 if __FILE__ == $PROGRAM_NAME
