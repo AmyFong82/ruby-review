@@ -8,8 +8,15 @@
 
 
 def reverse_string(str)
-  # type your code in here
-
+  str_arr = str.chars  #chars makes the str into array.
+  reversed_arr = []
+  str_length = str.size  #size or length work the same here.
+  index = str_length - 1
+  for c in str_arr do
+    reverse_string[index] = c  #put the first character in the last place.
+    index -= 1 #count down to the next one
+  end
+  reverse_string.join #return the joined string from the array.
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -22,5 +29,10 @@ if __FILE__ == $PROGRAM_NAME
   puts "=>", reverse_string('catbaby')
 
   # Don't forget to add your own!
+
+  puts
+
+  puts "Expecting: 'ymAlalib'"
+  puts "=>", reverse_string('bilalAmy')
 end
 
